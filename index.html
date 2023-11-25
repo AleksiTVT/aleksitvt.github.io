@@ -11,12 +11,12 @@
             return "Hello!"
         }
         document.write(hello())
-        document.getElementById("button1").onclick=(() => {
-            document.write("button1 was clicked.")
-            console.log("This is atleast called.")
-        })
+        
+        function buttonPress(){
+            console.log("Button was pressed.")
+        }
     </script>
     <p>Does this still work?</p>
-    <button id="button1">a button</button>
+    <button onclick=buttonPress>a button</button>
 </body>
 </html>
